@@ -11,5 +11,5 @@ export default {
   project: {
     link: 'https://github.com/42arch/nextjs-github-pages',
   },
-  docsRepositoryBase: 'https://github.com/42arch/nextjs-github-pages',
+  docsRepositoryBase: 'https://github.com/42arch/nextjs-github-pages/tree/main',
 }

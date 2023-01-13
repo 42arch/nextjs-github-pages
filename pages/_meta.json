@@ -5,11 +5,11 @@
     "display": "hidden"
   },
   "docs": {
-    "title": "文档",
+    "title": "docs",
     "type": "page"
   },
   "links": {
-    "title": "链接",
+    "title": "links",
     "type": "menu",
     "items": {
       "website": {

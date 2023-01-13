@@ -6,18 +6,23 @@ const withNextra = require('nextra')({
   themeConfig: './theme.config.jsx',
 })
 
-module.exports = withNextra({
-  /**
-   * Tell Next.js where the `public` folder is.
-   * Replace `nextjs-github-pages` with your Github repo project name.
-   */
-  assetPrefix: isProd ? '/nextjs-github-pages/' : '',
-  /**
-   * Disable server-based image optimization.
-   *
-   * @see https://nextjs.org/blog/next-12-3#disable-image-optimization-stable
-   */
+let config = {
   images: {
     unoptimized: true,
   },
-})
+}
+
+if (
+  process.env.GITHUB_REPOSITORY &&
+  ['phase-production-build', 'phase-export'].includes(phase)
+) {
+  const repositoryName = process.env.GITHUB_REPOSITORY.split('/')[1]
+
+  config = {
+    ...config,
+    assetPrefix: `/${repositoryName}/`,
+    basePath: `/${repositoryName}`,
+  }
+}
+
+module.exports = withNextra(config)
