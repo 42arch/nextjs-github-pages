@@ -1,0 +1,22 @@
+{
+  "index": {
+    "title": "Nextra",
+    "type": "page",
+    "display": "hidden"
+  },
+  "docs": {
+    "title": "文档",
+    "type": "page"
+  },
+  "links": {
+    "title": "链接",
+    "type": "menu",
+    "items": {
+      "website": {
+        "title": "Next.js",
+        "href": "https://www.nextjs.com",
+        "newWindow": true
+      }
+    }
+  }
+}
