@@ -1,16 +1,6 @@
-# Next.js Github Pages
+# Nextra Github Pages
 
-Deploy Next.js to Github Pages with Github Actions. 👉 [View the deployed app](https://gregrickaby.github.io/nextjs-github-pages/)
-
----
-
-Vercel promotes itself as _"The easiest way to deploy your Next.js app"_ and Netlify offers a similar service. However, both Vercel and Netlify really want you on _their platforms_. I'm interested in owning my own data and wanted to see if I could deploy a Next.js app to Github Pages.
-
-During my research, **I've found very little documentation around deploying a static Next.js app to Github Pages.** I spent an entire Saturday working through it and want to share what I learned with you.
-
-> Update: Vercel has since published an [official example](https://github.com/vercel/next.js/tree/canary/examples/github-pages). I recommend you take a look at the official example before making any major decisions.
-
----
+Deploy Nextra Doc Site to Github Pages with Github Actions, Same like a native Next.js app. Forked from https://github.com/gregrickaby/nextjs-github-pages.
 
 ## Configure Next.js
 
@@ -151,11 +141,3 @@ jobs:
 This is the easiest step, because as soon as Github recognizes there's a `/gh-pages` branch, it'll automatically activate the Github Pages feature!
 
 In a moment, you should be able to see your Next.js app at `https://your-username.github.io/your-repo-name/`
-
----
-
-## Wrap up
-
-Thanks for reading and I hope this helps. If you noticed someting wrong, please [file an issue](https://github.com/gregrickaby/nextjs-github-pages/issues). Good luck! 🍻
-
----
